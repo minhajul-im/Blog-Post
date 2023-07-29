@@ -1,7 +1,9 @@
+import Component from "../components/Component";
+
 const App = () => {
   return (
     <div>
-      <h1>Hello React JS</h1>
+      <Component />
     </div>
   );
 };
