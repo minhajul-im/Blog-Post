@@ -10,8 +10,8 @@ This function is a valid React component because it accepts a single “props”
 
 React components use props to communicate with each other. Every parent component can pass some information to its child components by giving them props. Props might remind you of HTML attributes, but you can pass any JavaScript value through them, including objects, arrays, and functions.
 
-<h6> Passing Props </h6>
-  When you use a component in JSX, you can provide attributes to that component. These attributes are known as props.
+Passing Props:
+When you use a component in JSX, you can provide attributes to that component. These attributes are known as props.
 
-<h6> Accessing Props in Components </h6>
-  Inside the component's function or class definition, you can access the props using the function argument
+Accessing Props in Components:
+Inside the component's function or class definition, you can access the props using the function argument
