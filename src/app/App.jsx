@@ -1,4 +1,5 @@
 import Component from "../components/Component";
+import Event from "../events/Event";
 import UseEffect from "../useEffet/UseEffect";
 import UseState from "../useState/UseState";
 
@@ -7,7 +8,8 @@ const App = () => {
     <div>
       {/* <Component /> */}
       {/* <UseState /> */}
-      <UseEffect />
+      {/* <UseEffect /> */}
+      <Event />
     </div>
   );
 };
