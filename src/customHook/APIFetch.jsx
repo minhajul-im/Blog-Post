@@ -1,4 +1,4 @@
-import {} from "react";
+import useFetchApi from "./useFetchApi";
 
 const url = `https://jsonplaceholder.typicode.com/posts`;
 
