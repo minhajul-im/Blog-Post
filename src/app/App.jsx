@@ -1,7 +1,8 @@
-import Component from "../components/Component";
-import Event from "../events/Event";
-import UseEffect from "../useEffet/UseEffect";
-import UseState from "../useState/UseState";
+import APIFetch from "../customHook/APIFetch";
+// import Component from "../components/Component";
+// import Event from "../events/Event";
+// import UseEffect from "../useEffet/UseEffect";
+// import UseState from "../useState/UseState";
 
 const App = () => {
   return (
@@ -9,7 +10,8 @@ const App = () => {
       {/* <Component /> */}
       {/* <UseState /> */}
       {/* <UseEffect /> */}
-      <Event />
+      {/* <Event /> */}
+      <APIFetch />
     </div>
   );
 };
