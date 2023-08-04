@@ -1,4 +1,4 @@
-import APIFetch from "../customHook/APIFetch";
+import PostApi from "../customHook/PostApi";
 // import Component from "../components/Component";
 // import Event from "../events/Event";
 // import UseEffect from "../useEffet/UseEffect";
@@ -11,7 +11,7 @@ const App = () => {
       {/* <UseState /> */}
       {/* <UseEffect /> */}
       {/* <Event /> */}
-      <APIFetch />
+      <PostApi />
     </div>
   );
 };
