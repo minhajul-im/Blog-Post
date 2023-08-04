@@ -5,6 +5,10 @@ const useFetchApi = (url, callback) => {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
+  useEffect(() => {
+    fetchApi(url);
+  }, []);
+
   const fetchApi = async () => {
     setLoading(true);
     try {
