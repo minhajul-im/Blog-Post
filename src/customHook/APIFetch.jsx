@@ -1,5 +1,7 @@
 import {} from "react";
 
+const url = `https://jsonplaceholder.typicode.com/posts`;
+
 const APIFetch = () => {
   return (
     <div>
