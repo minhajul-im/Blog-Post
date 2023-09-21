@@ -93,3 +93,7 @@ useState a built-in hook that allows functional components to have state. It is 
 # How does it work?
 
 useState is a special function. you've to pass the initial value or argument, It returns an array with two elements, 1st current state value, and 2nd a function to update the state.
+
+# What is useEffect?
+
+useEffect is a built-in hook that allows functional components to perform side effects. Side effects are actions that are executed outside the scope of the component rendering, such as data fetching, subscriptions, or DOM manipulation.
