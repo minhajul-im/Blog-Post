@@ -1,7 +1,9 @@
+import Clock from "./components/clock/Clock";
+
 const App = () => {
   return (
     <div>
-      <h1>Hello App</h1>
+      <Clock />
     </div>
   );
 };
