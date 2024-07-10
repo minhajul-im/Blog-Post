@@ -36,13 +36,13 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "yarn run lint && yarn run format"
+      "pre-push": "yarn lint && yarn format"
     }
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
-      "yarn run lint",
-      "yarn run format"
+      "yarn lint",
+      "yarn format"
     ]
   }
 }
