@@ -1,1 +1,1 @@
-<h1 align="center">React + Docker + CI - CD</h1>
+<h1 align="center">Coming soon...</h1>
