@@ -1,18 +1,27 @@
-import Nav from './components/Nav';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import About from './components/About';
-import Contact from './components/Contact';
+import { useState } from 'react';
+import Navbar from './components/nav/Navbar';
+import Hero from './components/hero/Hero';
+import Products from './components/product/Products';
+import About from './components/about/About';
+import Reviews from './components/review/Reviews';
+import Contact from './components/contact/Contact';
 
 const App = () => {
+  const [theme, setTheme] = useState<boolean>(true);
+
   return (
-    <main className="bg-gray-300">
-      <Nav />
+    <>
+      <Navbar isDark={theme} onToggle={() => setTheme(!theme)} />
       <Hero />
-      <Services />
-      <About />
-      <Contact />
-    </main>
+      <section
+        className={`theme-${theme ? 'black' : 'white'} bg-BG-dark text-TX-main`}
+      >
+        <Products />
+        <About />
+        <Reviews />
+        <Contact />
+      </section>
+    </>
   );
 };
 
