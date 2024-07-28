@@ -1,34 +1,54 @@
-const FAQ = () => {
+import { useState } from 'react';
+import Heading from '../common/Heading';
+import { DownArrow, UpArrow, IconType } from '../../icons';
+import { FAQ_DATA, FaqType } from '../../constant/mock-data';
+
+const FAQ = ({ isDark }: IconType) => {
+  const [isOpen, setIsOpen] = useState<number | null>(null);
+
+  const toggleFAQ = (index: number) => {
+    setIsOpen(isOpen === index ? null : index);
+  };
+
   return (
-    <section id="faq">
-      <div className="bg-BG-main">
-        <h1 className="text-white text-2xl font-bold text-center">
-          Our Services
-        </h1>
-        <div className="w-[800px] border-2 border-TX-dark rounded-md bg-BG-soft h-[1200px] flex justify-center items-center mx-auto">
-          <div className="col-span-6 flex flex-col items-start gap-4">
-            <h1 className="text-primary font-bold text-4xl">
-              Woodside Creek Paradise
-            </h1>
-            <p className="flex-1">
-              Your own piece of paradise awaits you. Nestled among oak trees,
-              this home is tucked away on nearly half an acre overlooking a
-              seasonal creek at the end of a quiet cul-de-sac with access to
-              trails. This move-in ready sunny home features abundant natural
-              light and forest views from every room. Highlights include
-              hardwood floors, an updated kitchen with stainless steel
-              appliances, dedicated off-street parking, and sunny spaces for
-              flower/vegetable gardens.
-            </p>
-            <div className="flex gap-4">
-              <button className="bg-primary hover:bg-secondary text-tBase font-medium px-6 py-2 rounded-md">
-                Buy now
+    <section id="faq" className="py-10 sm:py-16 lg:py-24">
+      <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+        <div className="max-w-2xl mx-auto text-center">
+          <Heading>Frequently Asked Questions!</Heading>
+        </div>
+
+        <hr />
+
+        <div className="max-w-6xl mx-auto mt-8 space-y-4 md:mt-16">
+          {FAQ_DATA.map((item: FaqType, idx: number) => (
+            <div
+              key={item.question}
+              className="transition-all duration-200 bg-BG-soft hover:bg-BG-main border border-BG-main hover:border-BG-dark shadow-lg cursor-pointer rounded"
+            >
+              <button
+                onClick={() => toggleFAQ(idx)}
+                type="button"
+                className="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+              >
+                <span className="text-lg font-semibold text-TX-main text-wrap">
+                  {item.question}
+                </span>
+                <span className="flex">
+                  {isOpen === idx ? (
+                    <UpArrow isDark={isDark} />
+                  ) : (
+                    <DownArrow isDark={isDark} />
+                  )}
+                </span>
               </button>
-              <button className="bg-bgPrimary border-secondary border-2 hover:border-primary font-medium px-6 py-2 rounded-md">
-                Explore
-              </button>
+
+              {isOpen === idx && (
+                <div className="text-TX-soft px-4 pb-5 sm:px-6 sm:pb-6 cursor-default">
+                  <p>{item.answer}</p>
+                </div>
+              )}
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
