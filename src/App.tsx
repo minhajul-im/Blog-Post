@@ -5,6 +5,7 @@ import Products from './components/product/Products';
 import About from './components/about/About';
 import Reviews from './components/review/Reviews';
 import Contact from './components/contact/Contact';
+import FeatureHighlights from './components/common/FeatureHighlights';
 
 const App = () => {
   const [theme, setTheme] = useState<boolean>(true);
@@ -14,8 +15,9 @@ const App = () => {
       <Navbar isDark={theme} onToggle={() => setTheme(!theme)} />
       <Hero />
       <section
-        className={`theme-${theme ? 'black' : 'white'} bg-BG-dark text-TX-main`}
+        className={`theme-${theme ? 'black' : 'white'} bg-BG-main text-TX-main py-6`}
       >
+        <FeatureHighlights />
         <Products />
         <About />
         <Reviews />

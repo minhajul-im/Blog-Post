@@ -2,9 +2,9 @@ import './About.css';
 
 const About = () => {
   return (
-    <div id="about">
+    <div id="about" className="container">
       <h1 className="text-2xl font-bold text-center my-6"> About us</h1>
-      <div className="w-full h-[1200px] flex justify-center items-center">
+      <div className="w-full h-[1200px] flex justify-center items-center border border-TX-main">
         <div className="loader">
           <div className="box box0">
             <div></div>
