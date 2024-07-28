@@ -7,6 +7,7 @@ import FAQ from './components/faq/FAQ';
 import Contact from './components/contact/Contact';
 import FeatureHighlights from './components/common/FeatureHighlights';
 import Footer from './components/footer/Footer';
+import CoverImage from './components/common/CoverImage';
 
 const App = () => {
   const [theme, setTheme] = useState<boolean>(true);
@@ -20,6 +21,7 @@ const App = () => {
       >
         <FeatureHighlights />
         <Shop />
+        <CoverImage />
         <About />
         <FAQ isDark={theme} />
         <Contact isDark={theme} />
