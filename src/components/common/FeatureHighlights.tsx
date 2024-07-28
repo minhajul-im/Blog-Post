@@ -11,7 +11,7 @@ const FeatureHighlights = () => {
           <div key={item.title} className="w-[300px] h-auto m-4">
             <div className="w-full h-auto">
               <img
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded"
                 src={item.img}
                 alt={item.title}
               />

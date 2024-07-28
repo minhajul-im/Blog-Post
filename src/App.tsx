@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import Navbar from './components/nav/Navbar';
 import Hero from './components/hero/Hero';
-import Products from './components/product/Products';
+import Shop from './components/shop/Shop';
 import About from './components/about/About';
-import Reviews from './components/review/Reviews';
+import FAQ from './components/faq/FAQ';
 import Contact from './components/contact/Contact';
 import FeatureHighlights from './components/common/FeatureHighlights';
 import Footer from './components/footer/Footer';
@@ -19,10 +19,10 @@ const App = () => {
         className={`theme-${theme ? 'black' : 'white'} bg-BG-main text-TX-main pt-6`}
       >
         <FeatureHighlights />
-        <Products />
+        <Shop />
         <About />
-        <Reviews />
-        <Contact />
+        <FAQ />
+        <Contact isDark={theme} />
         <Footer />
       </section>
     </>

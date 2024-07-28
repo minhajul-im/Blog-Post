@@ -2,7 +2,15 @@ import img1 from '../assets/nicout-filter.jpg';
 import img2 from '../assets/save-money.jpg';
 import img3 from '../assets/lab-test.jpg';
 
-import { FacebookIcon, XIcon, LinkedinIcon, InstagramIcon } from '../icons';
+import {
+  FacebookIcon,
+  XIcon,
+  LinkedinIcon,
+  InstagramIcon,
+  PhoneIcon,
+  EmailIcon,
+  LocationIcon,
+} from '../icons';
 
 export type LINK = { title: string; targetId: string };
 
@@ -12,20 +20,20 @@ export const LINKS: LINK[] = [
     targetId: 'hero',
   },
   {
-    title: 'Products',
-    targetId: 'products',
+    title: 'Shop',
+    targetId: 'shop',
   },
   {
     title: 'About',
     targetId: 'about',
   },
   {
-    title: 'Reviews',
-    targetId: 'reviews',
-  },
-  {
     title: 'Contact',
     targetId: 'contact',
+  },
+  {
+    title: 'FAQ',
+    targetId: 'faq',
   },
 ];
 
@@ -51,3 +59,10 @@ export const FEATURES: FEATURE[] = [
 
 export const SOCIALS = [FacebookIcon, XIcon, LinkedinIcon, InstagramIcon];
 export const SOCIAL_LINKS = ['#', '#', '#', '#'];
+
+export const CONTACT = [
+  '+880 1*01 1** ***',
+  'example@gmail.com',
+  'Dhaka, Bangladesh!',
+];
+export const CONTACT_ICONS = [PhoneIcon, EmailIcon, LocationIcon];

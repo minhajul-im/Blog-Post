@@ -1,6 +1,6 @@
-const Products = () => {
+const Shop = () => {
   return (
-    <section id="products">
+    <section id="shop">
       <div className="bg-BG-main">
         <h1 className="text-white text-2xl font-bold text-center">
           Our Services
@@ -86,4 +86,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default Shop;

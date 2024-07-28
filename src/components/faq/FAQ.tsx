@@ -1,6 +1,6 @@
-const Reviews = () => {
+const FAQ = () => {
   return (
-    <section id="reviews">
+    <section id="faq">
       <div className="bg-BG-main">
         <h1 className="text-white text-2xl font-bold text-center">
           Our Services
@@ -35,4 +35,4 @@ const Reviews = () => {
   );
 };
 
-export default Reviews;
+export default FAQ;
