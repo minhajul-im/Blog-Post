@@ -2,7 +2,6 @@ import SunIcon from './SunIcon';
 import MenuIcon from './MenuIcon';
 import DarkIcon from './DarkIcon';
 import CrossIcon from './CrossIcon';
-import DownArrowIcon from './DownArrowIcon';
 import FacebookIcon from './FacebookIcon';
 import LinkedinIcon from './LinkedinIcon';
 import InstagramIcon from './InstagramIcon';
@@ -10,6 +9,8 @@ import XIcon from './XIcon';
 import PhoneIcon from './PhoneIcon';
 import EmailIcon from './EmailIcon';
 import LocationIcon from './LocationIcon';
+import DownArrow from './DownArrow';
+import UpArrow from './UpArrow';
 
 export type IconType = {
   isDark: boolean;
@@ -20,8 +21,9 @@ export {
   SunIcon,
   CrossIcon,
   MenuIcon,
-  DownArrowIcon,
   XIcon,
+  DownArrow,
+  UpArrow,
   InstagramIcon,
   LinkedinIcon,
   FacebookIcon,

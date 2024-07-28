@@ -66,3 +66,23 @@ export const CONTACT = [
   'Dhaka, Bangladesh!',
 ];
 export const CONTACT_ICONS = [PhoneIcon, EmailIcon, LocationIcon];
+
+export type FaqType = {
+  question: string;
+  answer: string;
+};
+
+export const FAQ_DATA: FaqType[] = [
+  {
+    question: 'Getting started is easy! Sign up an?',
+    answer: `Getting started is easy! Sign up for an ?, and you'll have access to our platform's features. No credit card required for the initial signup.`,
+  },
+  {
+    question: 'Getting started easy! n ?',
+    answer: `Getting started is easy! Sign up for an ?, and you'll have access to our platform's features. No credit card required for the initial signup.`,
+  },
+  {
+    question: 'Getting d is easy! Sign up for an ?',
+    answer: `Getting started is easy! Sign up for an ?, and you'll have access to our platform's features. No credit card required for the initial signup.`,
+  },
+];

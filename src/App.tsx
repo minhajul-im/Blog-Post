@@ -21,7 +21,7 @@ const App = () => {
         <FeatureHighlights />
         <Shop />
         <About />
-        <FAQ />
+        <FAQ isDark={theme} />
         <Contact isDark={theme} />
         <Footer />
       </section>
