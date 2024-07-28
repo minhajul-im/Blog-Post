@@ -4,7 +4,7 @@ const Button = () => {
   const handleScroll = (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
 
-    const targetEle = document.getElementById('products');
+    const targetEle = document.getElementById('shop');
 
     if (targetEle) {
       const offSetTop = targetEle.offsetTop - 80;
@@ -16,7 +16,7 @@ const Button = () => {
     }
   };
   return (
-    <a href="#products" onClick={handleScroll}>
+    <a href="#shop" onClick={handleScroll}>
       <button className="btn" type="button">
         <strong>GO TO SHOP</strong>
         <div id="container-stars">

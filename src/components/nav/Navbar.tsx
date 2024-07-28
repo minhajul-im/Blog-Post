@@ -67,7 +67,7 @@ const Navbar = ({ isDark, onToggle }: NavProps) => {
 
   return (
     <nav className="fixed top-0 md:top-4 z-50 w-full flex flex-col justify-center items-center rounded-full">
-      <div className="flex w-full md:w-[38rem] items-center justify-between overflow-y-hidden backdrop-blur-md py-4 px-6 md:rounded-full md:shadow-2xl">
+      <div className="flex w-full md:w-[35rem] items-center justify-between overflow-y-hidden backdrop-blur-md py-4 px-6 md:rounded-full md:shadow-2xl">
         <a
           href="#home"
           onClick={(e: React.MouseEvent<HTMLAnchorElement>) =>
