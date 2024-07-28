@@ -2,6 +2,8 @@ import img1 from '../assets/nicout-filter.jpg';
 import img2 from '../assets/save-money.jpg';
 import img3 from '../assets/lab-test.jpg';
 
+import { FacebookIcon, XIcon, LinkedinIcon, InstagramIcon } from '../icons';
+
 export type LINK = { title: string; targetId: string };
 
 export const LINKS: LINK[] = [
@@ -46,3 +48,6 @@ export const FEATURES: FEATURE[] = [
     img: img3,
   },
 ];
+
+export const SOCIALS = [FacebookIcon, XIcon, LinkedinIcon, InstagramIcon];
+export const SOCIAL_LINKS = ['#', '#', '#', '#'];

@@ -18,7 +18,7 @@ const Button = () => {
   return (
     <a href="#products" onClick={handleScroll}>
       <button className="btn" type="button">
-        <strong>GO TO SEE</strong>
+        <strong>GO TO SHOP</strong>
         <div id="container-stars">
           <div id="stars"></div>
         </div>
