@@ -20,7 +20,7 @@ const App = () => {
         className={`theme-${theme ? 'black' : 'white'} bg-BG-main text-TX-main pt-6`}
       >
         <FeatureHighlights />
-        <Shop />
+        <Shop isDark={theme} />
         <CoverImage />
         <About />
         <FAQ isDark={theme} />
