@@ -1,6 +1,9 @@
 import img1 from '../assets/nicout-filter.jpg';
 import img2 from '../assets/save-money.jpg';
 import img3 from '../assets/lab-test.jpg';
+import img4 from '../assets/nic-out1.jpg';
+import img5 from '../assets/nic-out2.jpg';
+import img6 from '../assets/nic-out3.jpg';
 
 import {
   FacebookIcon,
@@ -84,5 +87,48 @@ export const FAQ_DATA: FaqType[] = [
   {
     question: 'Getting d is easy! Sign up for an ?',
     answer: `Getting started is easy! Sign up for an ?, and you'll have access to our platform's features. No credit card required for the initial signup.`,
+  },
+];
+
+export const DESC: string[] = [
+  `Filters remove over 90% of the tar and reduce nicotine!`,
+  `A smoker does not detect any changes in the taste of the cigarette since the method used is mechanical smoke purification!`,
+  `One Filter is good for 4 to 5 Cigarettes, one pack contains 30 filters!`,
+  `Nic Out makes cigarettes less harmful and much easier to break your addiction to Nicotine completely!`,
+];
+
+export type ProductType = {
+  id: number;
+  name: string;
+  img: string;
+  pis: string;
+  price: string;
+  desc: string[];
+};
+
+export const PRODUCTS: ProductType[] = [
+  {
+    id: 1,
+    name: 'Filters for Cigarette Smokers!',
+    img: img4,
+    pis: '1 Pack = 30 Filters!',
+    desc: DESC,
+    price: '700.00',
+  },
+  {
+    id: 2,
+    name: 'Smoking Free Tar & Nicotine Disposable Nicout Holders for Smokers',
+    pis: '3 Packs = 90 Filters!',
+    img: img5,
+    desc: DESC,
+    price: '2000.00',
+  },
+  {
+    id: 3,
+    name: 'Removes The Tar Not The Taste - Reusable Cigarette Filter Tips for Regular & Light Cigarettes!',
+    img: img6,
+    pis: '5 Packs = 150 Filters!',
+    desc: DESC,
+    price: '3300.00',
   },
 ];
