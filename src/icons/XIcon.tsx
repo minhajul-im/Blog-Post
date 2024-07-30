@@ -1,6 +1,9 @@
-const XIcon = () => {
+import { IconType } from '.';
+
+const XIcon = ({ isDark }: IconType) => {
   return (
     <svg
+      className={`${isDark ? 'text-white' : 'text-[#000000]'}`}
       stroke="currentColor"
       fill="currentColor"
       strokeWidth="0"

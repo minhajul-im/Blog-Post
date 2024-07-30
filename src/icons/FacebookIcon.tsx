@@ -1,6 +1,9 @@
-const FacebookIcon = () => {
+import { IconType } from '.';
+
+const FacebookIcon = ({ isDark }: IconType) => {
   return (
     <svg
+      className={`${isDark ? 'text-white' : 'text-[#000000]'}`}
       stroke="currentColor"
       fill="currentColor"
       strokeWidth="0"

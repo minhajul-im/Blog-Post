@@ -1,6 +1,9 @@
-const LinkedinIcon = () => {
+import { IconType } from '.';
+
+const LinkedinIcon = ({ isDark }: IconType) => {
   return (
     <svg
+      className={`${isDark ? 'text-white' : 'text-[#000000]'}`}
       stroke="currentColor"
       fill="currentColor"
       strokeWidth="0"
