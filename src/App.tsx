@@ -25,7 +25,7 @@ const App = () => {
         <About />
         <FAQ isDark={theme} />
         <Contact isDark={theme} />
-        <Footer />
+        <Footer isDark={theme} />
       </section>
     </>
   );
