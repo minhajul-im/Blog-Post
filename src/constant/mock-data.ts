@@ -90,7 +90,7 @@ export const FAQ_DATA: FaqType[] = [
   },
 ];
 
-export const DESC: string[] = [
+const DESC: string[] = [
   `Filters remove over 90% of the tar and reduce nicotine!`,
   `A smoker does not detect any changes in the taste of the cigarette since the method used is mechanical smoke purification!`,
   `One Filter is good for 4 to 5 Cigarettes, one pack contains 30 filters!`,
