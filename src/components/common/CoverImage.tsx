@@ -3,10 +3,10 @@ import handImg from '../../assets/beautiful-hand-with-nicout.jpg';
 
 const CoverImage = () => {
   return (
-    <section className="container">
+    <section className="container my-20">
       <Heading>See The Result!</Heading>
 
-      <div className="w-full h-auto">
+      <div className="w-full h-auto my-10">
         <img
           src={handImg}
           alt="simple demo"
