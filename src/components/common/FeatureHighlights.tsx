@@ -6,7 +6,7 @@ const FeatureHighlights = () => {
     <section className="container my-20">
       <Heading>Product Description</Heading>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center transition-all duration-300">
         {FEATURES.map((item: FEATURE) => (
           <div key={item.title} className="w-[300px] h-auto m-4">
             <div className="w-full h-auto">

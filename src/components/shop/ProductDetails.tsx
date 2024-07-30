@@ -5,8 +5,6 @@ type ID = { id: number | null };
 const ProductDetails = ({ id }: ID) => {
   const product = PRODUCTS.find((item: ProductType) => item.id === id);
 
-  console.log('find_product', product);
-
   return (
     <div className="p-4 md:p-6 w-[360px] md:w-[700px] lg:w-[750px] flex flex-col justify-center md:flex-row md:items-center gap-5">
       <div className="w-[320px] md:w-[330px] lg:w-[340px] h-[320px] md:h-[350px] rounded">

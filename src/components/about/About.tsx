@@ -1,5 +1,4 @@
 import Heading from '../common/Heading';
-import './About.css';
 
 const About = () => {
   return (
