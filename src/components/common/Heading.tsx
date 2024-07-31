@@ -6,7 +6,7 @@ const Heading = ({ children, side }: HeadingProps) => {
   const initialX = side === 'left' ? '-100%' : '100%';
 
   return (
-    <div className="max-w-2xl mx-auto text-center">
+    <div className="max-w-2xl mx-auto text-center my-4">
       <motion.h1
         initial={{ opacity: 0, x: initialX }}
         whileInView={{
