@@ -1,6 +1,5 @@
 import video from '../../assets/video.mp4';
 import thumbnail from '../../assets/thumbnail.png';
-import Button from './button/Button';
 
 const Hero = () => {
   return (
@@ -22,7 +21,7 @@ const Hero = () => {
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent from-60% to-black" />
 
       <div className="relative z-20 flex h-screen flex-col justify-end pb-20">
-        <Button />
+        <button>click</button>
       </div>
     </section>
   );
