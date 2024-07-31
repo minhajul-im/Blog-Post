@@ -132,3 +132,5 @@ export const PRODUCTS: ProductType[] = [
     price: '3300.00',
   },
 ];
+
+export const TITLE = `Filters remove over 90% of the tar and reduce nicotine!`;
