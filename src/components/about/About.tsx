@@ -3,7 +3,7 @@ import Heading from '../common/Heading';
 const About = () => {
   return (
     <section id="about" className="container my-10">
-      <Heading>About Us</Heading>
+      <Heading side="right">About Us</Heading>
 
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cumque a

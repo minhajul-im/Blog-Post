@@ -41,7 +41,7 @@ const Shop = ({ isDark }: IconType) => {
       </CustomModal>
 
       <section id="shop" className="container my-16">
-        <Heading>Nic Out</Heading>
+        <Heading side="right">Nic Out</Heading>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-16 justify-items-center transition-all duration-300">
           {PRODUCTS.map((item: ProductType) => (

@@ -4,7 +4,7 @@ import handImg from '../../assets/beautiful-hand-with-nicout.jpg';
 const CoverImage = () => {
   return (
     <section className="container my-20 transition-all duration-300">
-      <Heading>See The Result!</Heading>
+      <Heading side="left">See The Result!</Heading>
 
       <div className="w-full h-auto my-10">
         <img
