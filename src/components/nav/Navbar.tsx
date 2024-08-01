@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 
 import './Navbar.css';
-import logo from '../../assets/logo.jpg';
 import { LINK, LINKS } from '../../constant/mock-data';
 import { SunIcon, DarkIcon, MenuIcon, CrossIcon } from '../../icons';
 
@@ -75,11 +74,7 @@ const Navbar = ({ isDark, onToggle }: NavProps) => {
             handleScroll(e, 'hero')
           }
         >
-          <img
-            src={logo}
-            alt="logo"
-            className="w-[30px] h-[20px] object-cover rounded"
-          />
+          ❤️
         </a>
         <div className="hidden space-x-6 md:flex">
           {LINKS.map((link: LINK, idx: number) => (

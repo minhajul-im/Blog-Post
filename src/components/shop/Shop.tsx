@@ -40,10 +40,10 @@ const Shop = ({ isDark }: IconType) => {
         <Order />
       </CustomModal>
 
-      <section id="shop" className="container my-16">
+      <section id="shop" className="container my-20">
         <Heading side="right">Nic Out</Heading>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-16 justify-items-center transition-all duration-300">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-6 justify-items-center transition-all duration-300">
           {PRODUCTS.map((item: ProductType) => (
             <div
               key={item?.id}
@@ -61,7 +61,7 @@ const Shop = ({ isDark }: IconType) => {
 
               <button
                 onClick={handleBuy}
-                className="py-2 px-6 rounded-full bg-gradient-to-r from-[#335c99] to-[#1a2438] absolute bottom-4 left-1/2 transform -translate-x-1/2 font-bold text-sm "
+                className="py-2 px-6 rounded-full bg-gradient-to-r from-[#335c99] to-[#1a2438] absolute bottom-4 left-1/2 transform -translate-x-1/2 font-bold text-sm text-white"
               >
                 BUY NOW
               </button>

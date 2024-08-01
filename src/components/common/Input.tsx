@@ -16,8 +16,8 @@ const Input = ({
   onChanges,
 }: InputType) => {
   return (
-    <div className="mb-4">
-      <label className="block mb-2 ml-1 text-sm text-TX-main font-bold">
+    <div className="mb-2">
+      <label className="block mb-1 ml-1 text-sm text-TX-main font-bold">
         {children}
       </label>
       <input
@@ -27,7 +27,7 @@ const Input = ({
         placeholder={text}
         required={require}
         onChange={onChanges}
-        className="w-full px-4 py-2 text-TX-main border border-TX-main bg-BG-soft rounded-md focus:outline-none focus:ring-2 focus:ring-[#3586ff]"
+        className="w-full px-3 md:px-4 py-1.5 md:py-2 text-TX-main border border-TX-main bg-BG-soft rounded-md focus:outline-none focus:ring-2 focus:ring-[#3586ff]"
       />
     </div>
   );

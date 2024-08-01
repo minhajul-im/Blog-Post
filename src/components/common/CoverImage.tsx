@@ -6,7 +6,7 @@ const CoverImage = () => {
     <section className="container my-20 transition-all duration-300">
       <Heading side="left">See The Result!</Heading>
 
-      <div className="w-full h-auto my-10">
+      <div className="w-full h-auto my-16">
         <img
           src={handImg}
           alt="simple demo"
