@@ -2,12 +2,14 @@ import { useState } from 'react';
 import Heading from '../common/Heading';
 import { DownArrow, UpArrow, IconType } from '../../icons';
 import { FAQ_DATA, FaqType } from '../../constant/mock-data';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const FAQ = ({ isDark }: IconType) => {
   const [isOpen, setIsOpen] = useState<number | null>(null);
 
   const toggleFAQ = (index: number) => {
     setIsOpen(isOpen === index ? null : index);
+    console.log(FAQ_DATA[index].answer.split(' ').length);
   };
 
   return (
@@ -24,12 +26,12 @@ const FAQ = ({ isDark }: IconType) => {
               <button
                 onClick={() => toggleFAQ(idx)}
                 type="button"
-                className="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+                className="flex items-center justify-between w-full px-4 py-5 sm:p-6 transition-all duration-100"
               >
                 <span className="text-lg font-semibold text-TX-main text-wrap">
                   {item.question}
                 </span>
-                <span className="flex">
+                <span>
                   {isOpen === idx ? (
                     <UpArrow isDark={isDark} />
                   ) : (
@@ -39,9 +41,25 @@ const FAQ = ({ isDark }: IconType) => {
               </button>
 
               {isOpen === idx && (
-                <div className="text-TX-soft px-4 pb-5 sm:px-6 sm:pb-6 cursor-default">
-                  <p>{item.answer}</p>
-                </div>
+                <AnimatePresence>
+                  <motion.div
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{
+                      opacity: 1,
+                      height: 'auto',
+                    }}
+                    exit={{
+                      opacity: 0,
+                      height: 0,
+                    }}
+                    transition={{
+                      ease: 'easeInOut',
+                    }}
+                    className="text-TX-soft px-4 pb-5 sm:px-6 sm:pb-6 cursor-default"
+                  >
+                    <p>{item.answer}</p>
+                  </motion.div>
+                </AnimatePresence>
               )}
             </div>
           ))}
@@ -52,3 +70,9 @@ const FAQ = ({ isDark }: IconType) => {
 };
 
 export default FAQ;
+
+const calculateDuration = (answer: string) => {
+  const baseDuration = 0.5; // base duration in seconds
+  const additionalDurationPerCharacter = 0.02; // additional duration per character
+  return baseDuration + answer.length * additionalDurationPerCharacter;
+};
