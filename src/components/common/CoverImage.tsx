@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
-
-import Heading from './Heading';
 import handImg from '../../assets/beautiful-hand-with-nicout.jpg';
 
 const CoverImage = () => {
   return (
     <section className="container my-20 transition-all duration-300">
-      <Heading side="left">See The Result!</Heading>
+      <h2 className="text-2xl font-bold text-TX-soft text-center py-6 my-8">
+        See The Result!
+      </h2>
 
       <div className="flex justify-center items-center">
         <motion.div

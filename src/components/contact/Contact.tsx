@@ -6,7 +6,7 @@ import { CONTACT, CONTACT_ICONS } from '../../constant/mock-data';
 const Contact = ({ isDark }: IconType) => {
   return (
     <section id="contact" className="pb-48 mt-16 container">
-      <Heading side="right">Contact us</Heading>
+      <Heading>Contact us</Heading>
 
       <div className="flex flex-col md:flex-row-reverse md:justify-between md:items-center py-8">
         <div className="w-full md:w-1/2 py-10 flex justify-center items-center rounded-lg">
