@@ -115,11 +115,6 @@ export const PRODUCTS: ProductType[] = [
 
 export const TITLE = `Filters remove over 90% of the tar and reduce nicotine!`;
 
-/**
- * REACT INTERVIEW
- * https://www.youtube.com/watch?v=5it_Uv7pGFg
- */
-
 export type FaqType = {
   question: string;
   answer: string;
@@ -174,4 +169,21 @@ export const FAQ_DATA: FaqType[] = [
     question: 'Who are the users of Nic-Out Filters?',
     answer: `The Nic-Out creates the convenience of people of legal age who already smoke or are trying to cut down on smoking, or wish to have a better smoking experience. Nic-Out is capable to raise the quality of life with less health risks.`,
   },
+];
+
+export const ABOUT = [
+  `Nic-out is a health product that has international success for smokers, with the highest level of performance in the market!`,
+  `Nic-out is a portable filter in the form of a cigarette fairy that fits on the cigarette and reduces the damage caused by smoking by reducing and absorbing the toxins that are burned while burning the cigarette without compromising the smoker’s taste or consumption habits!`,
+  `Its main function is to help the person who smokes get rid of breathing difficulties and to allow him to start the process of reducing/stopping smoking in a more lenient way!`,
+  `The filter has been tested very carefully and is always in the process of supervising and upgrading the product in order to provide the customer with the maximum value for his money and health!`,
+  `In a box of standard filters, there are 30 filters, In the box of SLIM & HAND ROLLING filters, there are 25 filters!`,
+  `Each filter fits an average of 3-5 cigarettes. SLIM & HAND ROLLING Suitable for Slims, Super Slims, and Rollers with 6 and 5.3mm millimeter filter tips!`,
+];
+
+export const WORK = [
+  `The inner filter allows only small particles of smoke with low molecular weight to pass through, which do not include the molecules of toxins and tar which are considered heavier. This reduces the amount of toxins and nicotine in each inhalation, thus reducing the desire and desire to smoke without damaging the taste of the cigarette`,
+
+  `NIC- Out cigarette filter with a mechanical filtration system that is applied to the cigarette and selectively absorbs the large smoke particles of cigarette tar containing toxic compounds and other carcinogenic substances`,
+
+  `The action principle of the nic-out filter is based on the gas engine’s gas behavior rules and has been developed in the framework of space technologies.`,
 ];

@@ -1,7 +1,7 @@
 import Order from './Order';
-import Heading from '../common/Heading';
 import { IconType } from '../../icons';
 import React, { useState } from 'react';
+import Heading from '../common/Heading';
 import CustomModal from '../common/CustomModal';
 import ProductDetails from './ProductDetails';
 import { PRODUCTS, ProductType } from '../../constant/mock-data';
@@ -41,7 +41,7 @@ const Shop = ({ isDark }: IconType) => {
       </CustomModal>
 
       <section id="shop" className="container my-20">
-        <Heading side="right">Nic Out</Heading>
+        <Heading>Nic Out</Heading>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-6 justify-items-center transition-all duration-300">
           {PRODUCTS.map((item: ProductType) => (

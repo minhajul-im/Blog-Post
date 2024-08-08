@@ -1,14 +1,12 @@
 import { motion } from 'framer-motion';
 
-type HeadingProps = { children: string; side?: 'left' | 'right' };
+type HeadingProps = { children: string };
 
-const Heading = ({ children, side }: HeadingProps) => {
-  const initialX = side === 'left' ? '-100%' : '100%';
-
+const Heading = ({ children }: HeadingProps) => {
   return (
     <div className="max-w-2xl mx-auto text-center my-4 overflow-hidden">
       <motion.h1
-        initial={{ opacity: 0, x: initialX }}
+        initial={{ opacity: 0, x: '-100%' }}
         whileInView={{
           opacity: 1,
           x: 0,

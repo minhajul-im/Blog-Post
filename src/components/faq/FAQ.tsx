@@ -15,7 +15,7 @@ const FAQ = ({ isDark }: IconType) => {
   return (
     <section id="faq" className="py-10 sm:py-16 lg:py-24">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <Heading side="left">Frequently Asked Questions!</Heading>
+        <Heading>Frequently Asked Questions!</Heading>
 
         <div className="max-w-6xl mx-auto mt-8 space-y-4 md:mt-16">
           {FAQ_DATA.map((item: FaqType, idx: number) => (
