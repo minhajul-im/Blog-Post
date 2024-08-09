@@ -55,7 +55,7 @@ const FAQ = ({ isDark }: IconType) => {
                     transition={{
                       ease: 'easeInOut',
                     }}
-                    className="text-TX-soft px-4 pb-5 sm:px-6 sm:pb-6 cursor-default"
+                    className="text-TX-soft px-4 pb-5 sm:px-6 sm:pb-6 cursor-default mr-6 md:mr-14 lg:mr-20"
                   >
                     <p>{item.answer}</p>
                   </motion.div>

@@ -1,19 +1,24 @@
-import { initializeApp } from 'firebase/app';
-import { getAnalytics } from 'firebase/analytics';
-import { getFirestore } from 'firebase/firestore';
-import { apiKey, appId, measurementId, messagingSenderId } from './constant';
+// import { initializeApp } from 'firebase/app';
+// import { getAnalytics } from 'firebase/analytics';
+// import { getFirestore } from 'firebase/firestore';
+// import {
+//   firebaseApiKey,
+//   firebaseAppId,
+//   firebaseMeasurementId,
+//   firebaseMessagingSenderId,
+// } from './constant';
 
-const firebaseConfig = {
-  apiKey: apiKey,
-  authDomain: 'pack-n-jar.firebaseapp.com',
-  projectId: 'pack-n-jar',
-  storageBucket: 'pack-n-jar.appspot.com',
-  messagingSenderId: messagingSenderId,
-  appId: appId,
-  measurementId: measurementId,
-};
+// const firebaseConfig = {
+//   apiKey: firebaseApiKey,
+//   authDomain: 'pack-n-jar.firebaseapp.com',
+//   projectId: 'pack-n-jar',
+//   storageBucket: 'pack-n-jar.appspot.com',
+//   messagingSenderId: firebaseMessagingSenderId,
+//   appId: firebaseAppId,
+//   measurementId: firebaseMeasurementId,
+// };
 
-const app = initializeApp(firebaseConfig);
+// const app = initializeApp(firebaseConfig);
 
-export const db = getFirestore(app);
-export const analytics = getAnalytics(app);
+// export const db = getFirestore(app);
+// export const analytics = getAnalytics(app);

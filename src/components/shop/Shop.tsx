@@ -13,12 +13,13 @@ const Shop = ({ isDark }: IconType) => {
 
   const [ui, setUi] = useState<Open>({ details: false, buy: false });
 
-  const handleDetails = (id: number) => {
-    setId(id);
+  const handleDetails = (idx: number) => {
+    setId(idx);
     setUi({ ...ui, details: true });
   };
 
-  const handleBuy = () => {
+  const handleBuy = (idx: number) => {
+    setId(idx);
     setUi({ ...ui, buy: true });
   };
 
@@ -37,7 +38,7 @@ const Shop = ({ isDark }: IconType) => {
         isOpen={ui.buy}
         onClose={() => setUi({ ...ui, buy: false })}
       >
-        <Order />
+        <Order id={id} />
       </CustomModal>
 
       <section id="shop" className="container my-20">
@@ -50,7 +51,7 @@ const Shop = ({ isDark }: IconType) => {
               className="w-[320px] md:w-[350px] lg:w-[320px] h-[348px] md:h-[420px] my-4 transition-transform duration-500 ease-in-out hover:scale-110 relative rounded"
             >
               <label className="absolute text-TX-main bg-[#ff1a1a] rounded px-3 py-1 transform -rotate-45 top-8 font-semibold font-mono">
-                ৳{item?.price}
+                ৳{item?.price}.00
               </label>
               <button
                 onClick={() => handleDetails(item?.id)}
@@ -60,7 +61,7 @@ const Shop = ({ isDark }: IconType) => {
               </button>
 
               <button
-                onClick={handleBuy}
+                onClick={() => handleBuy(item.id)}
                 className="py-2 px-6 rounded-full bg-gradient-to-r from-[#335c99] to-[#1a2438] absolute bottom-4 left-1/2 transform -translate-x-1/2 font-bold text-sm text-white"
               >
                 BUY NOW
@@ -79,5 +80,3 @@ const Shop = ({ isDark }: IconType) => {
 };
 
 export default Shop;
-
-// https://www.youtube.com/watch?v=l8knG0BPr-o
