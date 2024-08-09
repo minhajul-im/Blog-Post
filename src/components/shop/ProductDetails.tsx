@@ -1,6 +1,6 @@
 import { PRODUCTS, ProductType } from '../../constant/mock-data';
 
-type ID = { id: number | null };
+export type ID = { id: number | null };
 
 const ProductDetails = ({ id }: ID) => {
   const product = PRODUCTS.find((item: ProductType) => item.id === id);

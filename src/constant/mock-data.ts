@@ -82,7 +82,7 @@ export type ProductType = {
   name: string;
   img: string;
   pis: string;
-  price: string;
+  price: number;
   desc: string[];
 };
 
@@ -93,7 +93,7 @@ export const PRODUCTS: ProductType[] = [
     img: img4,
     pis: '1 Pack = 30 Filters!',
     desc: DESC,
-    price: '700.00',
+    price: 700,
   },
   {
     id: 2,
@@ -101,7 +101,7 @@ export const PRODUCTS: ProductType[] = [
     pis: '3 Packs = 90 Filters!',
     img: img5,
     desc: DESC,
-    price: '2000.00',
+    price: 2000,
   },
   {
     id: 3,
@@ -109,7 +109,7 @@ export const PRODUCTS: ProductType[] = [
     img: img6,
     pis: '5 Packs = 150 Filters!',
     desc: DESC,
-    price: '3300.00',
+    price: 3300,
   },
 ];
 
