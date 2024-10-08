@@ -1,3 +1,7 @@
-# Blog Coming Soon...
+# Blog Post
 
-Hey! I've been working on some exciting blog posts, and I can't wait to share them with you. Stay tuned for insightful articles and updates that will be coming your way soon!
+Hey there! আমি ব্লগ পোস্ট লেখা শুরু করে দিয়েছি!
+
+**What is Runtime Environments?** [read the post](https://github.com/minhajul-im/Blog-Post/blob/main/javascript/Runtime-Environments.md)
+
+নতুন পোস্টগুলোর জন্য অপেক্ষা করুন এবং আপনার মতামত জানাতে ভুলবেন না!
